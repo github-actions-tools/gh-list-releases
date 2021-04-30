@@ -1,0 +1,39 @@
+name: List last GitHub repository's releases
+author: github-actions-tools
+description: List last GitHub repository's releases.
+inputs:
+  github-token:
+    description: The GitHub token used to create an authenticated client.  Defaults to github provided token.
+    default: ${{ github.token }}
+    required: false
+  owner:
+    description: The GitHub repo owner.  Defaults to github current repo owner.
+    default: ${{ github.repository_owner }}
+    required: false
+  repo:
+    description: The GitHub repo name.  Defaults to github current repo name.
+    default: ${{ github.event.repository.name }}
+    required: false
+  draft:
+    description: Include the GitHub draft releases.  Defaults to false.
+    default: false
+    required: false
+  prerelease:
+    description: Include the GitHub prereleases.  Defaults to false.
+    default: false
+    required: false
+  from_release:
+    description: The GitHub starting search release.  Defaults to null.
+    required: false
+  nb_results:
+    description: The GitHub release search results count.  Defaults to null.
+    required: false
+outputs:
+  count:
+    description: List last GitHub repository's releases
+runs:
+  using: node12
+  main: 'main.js'
+branding:
+  icon: git-pull-request
+  color: blue

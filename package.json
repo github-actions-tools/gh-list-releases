@@ -1,0 +1,33 @@
+{
+  "name": "gh-list-releases",
+  "version": "0.0.1",
+  "description": "GitHub Action to list last repository's releases",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-actions-tools/gh-list-releases.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "github actions",
+    "release",
+    "releases",
+    "version",
+    "versions"
+  ],
+  "author": "Sophian Mehboub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github-actions-tools/gh-list-releases/issues"
+  },
+  "homepage": "https://github.com/github-actions-tools/gh-list-releases#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "@octokit/plugin-paginate-rest": "^2.13.3"
+  }
+}

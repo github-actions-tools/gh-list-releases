@@ -25,12 +25,15 @@ inputs:
   from_release:
     description: The GitHub starting search release.  Defaults to null.
     required: false
+  to_release:
+    description: The GitHub end search release.  Defaults to null.
+    required: false
   nb_results:
     description: The GitHub release search results count.  Defaults to null.
     required: false
 outputs:
-  count:
-    description: List last GitHub repository's releases
+  releases:
+    description: Last GitHub repository's releases list
 runs:
   using: node12
   main: 'main.js'

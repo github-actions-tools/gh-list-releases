@@ -1,0 +1,22 @@
+{
+  "name": "smartarray",
+  "version": "1.0.0",
+  "description": "Array's child class with additional utility methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smehboub/smartarray.git"
+  },
+  "keywords": [
+    "array"
+  ],
+  "author": "Sophian Mehboub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smehboub/smartarray/issues"
+  },
+  "homepage": "https://github.com/smehboub/smartarray#readme"
+}

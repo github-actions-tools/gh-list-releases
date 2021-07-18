@@ -31,9 +31,21 @@ inputs:
   nb_results:
     description: The GitHub release search results count.  Defaults to null.
     required: false
+  exclude_ranges:
+    description: Exclude ranges from the GitHub releases list result.  Defaults to null.
+    required: false
+  regex_filter:
+    description: Match regex (literal notation) in the GitHub releases list result.  Defaults to null.
+    required: false
+  skip_from_release:
+    description: Skip from_release parameter value in the GitHub releases list result.  Defaults to false.
+    default: false
+    required: false
 outputs:
   releases:
-    description: Last GitHub repository's releases list
+    description: GitHub repository's releases list
+  releases_body:
+    description: GitHub repository's releases body list
 runs:
   using: node12
   main: 'main.js'

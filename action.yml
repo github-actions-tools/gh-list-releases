@@ -47,7 +47,7 @@ outputs:
   releases_body:
     description: GitHub repository's releases body list
 runs:
-  using: node12
+  using: node16
   main: 'main.js'
 branding:
   icon: git-pull-request
